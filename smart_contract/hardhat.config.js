@@ -3,9 +3,9 @@ require('@nomiclabs/hardhat-waffle');
 module.exports = {
   solidity: '0.8.0',
   networks: {
-    ropsten: {
-      url: 'https://eth-ropsten.alchemyapi.io/v2/Ntg90Dg1z8h_WxLkAxO0TemIlX_-_s5T',
-      accounts: ['146c29a015ee957276c703d860cb19d12ad5e8a0d84400d37e37684e72afeefd'],
+    rinkeby: {
+      url: 'https://eth-rinkeby.alchemyapi.io/v2/Ntg90Dg1z8h_WxLkAxO0TemIlX_-_s5T',
+      accounts: ['ba0845bc5558800d5998ab7ebd68bbbdaf564d5daf93391e31c893ec4ec5eff2'],
     },
   },
 };

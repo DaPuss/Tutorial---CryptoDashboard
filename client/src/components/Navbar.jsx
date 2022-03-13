@@ -1,7 +1,8 @@
 import { HiMenuAlt4, HiOutlineMenuAlt1 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import logo from "../../images/logo.png";
+import { TransactionContext } from "../context/TransactionContext";
 
 const NavBarItem = ({ title, classProps }) => {
   return <li className={"mx-4 cursor-pointer ${classProps}"}>{title}</li>;
@@ -18,7 +19,8 @@ const Navbar = () => {
         {["Market", "Exchange", "Tutorials", "Wallet"].map((item, index) => (
           <NavBarItem key={item + index} title={item} />
         ))}
-        <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
+        <li             
+          className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
           Login
         </li>
       </ul>
